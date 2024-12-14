@@ -14,7 +14,7 @@ app.get('/', async (req, res) => {
     }
 
     // Construct the target URL
-    const targetUrl = `https://files.directserver.workers.dev/pixeldrain.php?id=${id}`;
+    const targetUrl = `https://files.directserver.workers.dev/pixeldrain/${id}`;
 
     // Make the GET request
     const response = await axios.get(targetUrl, { responseType: 'text' }); // Use 'stream' or 'text' as needed
